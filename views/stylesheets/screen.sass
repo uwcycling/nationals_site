@@ -35,6 +35,9 @@ body.two-col
       :top 20px
       :bottom 20px
 
+    .sectionTitle
+      +sectionTitleFont
+
     #logoWrapper
       text-align: right
       +column(!blueprint_grid_columns / 2 - 1)
@@ -73,8 +76,22 @@ body.two-col
 
       .courseLabel
         margin:
-          :top 20px
           :bottom -1px
+
+    .sectionTitle
+      +sectionTitleFont
+
+    .elevationProfile
+      width: 100%
+      height: auto
+
+    .courseMap
+      width: auto
+      height: 300px
+
+    .sponsor
+      .sponsorLogo
+        max-width: 150px
 
   #footer
     +column(!blueprint_grid_columns)
@@ -83,17 +100,24 @@ body.two-col
       top: 20px
       bottom: 20px
 
-.sectionTitle
-  +sectionTitleFont
+#sponsorsPageContent
+  .sponsor
+    .sponsorLogo
+      max-width: 150px
+      float: left
+      margin-top: 30px
 
-.elevationProfile
-  width: 100%
-  height: auto
+    .sponsorTitle
+      font-size: 40px
+      float: right
+      margin-top: 90px
+      margin-bottom: -40px
 
-.courseMap
-  width: auto
-  height: 300px
+    .sponsorDescription
+      clear: both
 
-.sponsor
-  .sponsorLogo
-    max-width: 150px
+  #soloLogos
+    margin-top: 30px
+    text-align: center
+    .sponsorLogo
+      max-height: 100px
