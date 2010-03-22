@@ -24,3 +24,11 @@ end
 get '/' do
   haml :index
 end
+
+get '/sponsors.html' do
+  haml :sponsors
+end
+
+get '/courses.html' do
+  haml :courses
+end

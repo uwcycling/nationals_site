@@ -429,19 +429,22 @@ body.two-col #container { width: 950px; margin: 0 auto; overflow: hidden; displa
 body.two-col #container { display: block; }
 body.two-col #header, body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 950px; text-align: center; }
 * html body.two-col #header, * html body.two-col #footer { overflow-x: hidden; }
-body.two-col #divider { margin: auto; width: 700px; border-bottom: black 1px solid; }
-body.two-col #header { margin-top: 20px; }
-body.two-col #header #logoWrapper { display: inline; float: left; margin-right: 10px; width: 470px; }
+body.two-col #header { margin-top: 20px; margin-bottom: 20px; }
+body.two-col #header #logoWrapper { text-align: right; display: inline; float: left; margin-right: 10px; width: 430px; }
 * html body.two-col #header #logoWrapper { overflow-x: hidden; }
 body.two-col #header #logoWrapper #logo { width: 350px; }
-body.two-col #header #schedule { margin-top: 60px; text-align: left; font-size: 150%; display: inline; float: left; margin-right: 0; width: 470px; }
+body.two-col #header #schedule { margin-top: 60px; text-align: left; font-size: 150%; display: inline; float: left; margin-right: 0; width: 390px; }
 * html body.two-col #header #schedule { overflow-x: hidden; }
+body.two-col #header #schedule #eventsTitle { margin-left: -40px; }
 body.two-col #sidebar { display: inline; float: left; margin-right: 10px; width: 150px; }
 * html body.two-col #sidebar { overflow-x: hidden; }
-body.two-col #content #sponsors { display: inline; float: left; margin-right: 10px; width: 470px; }
+body.two-col #content { display: inline; float: left; margin-right: 0; width: 950px; }
+* html body.two-col #content { overflow-x: hidden; }
+body.two-col #content #sponsors { text-align: center; display: inline; float: left; margin-right: 10px; width: 470px; }
 * html body.two-col #content #sponsors { overflow-x: hidden; }
-body.two-col #content #courses { display: inline; float: left; margin-right: 0; width: 470px; }
+body.two-col #content #courses { text-align: center; display: inline; float: left; margin-right: 0; width: 470px; }
 * html body.two-col #content #courses { overflow-x: hidden; }
+body.two-col #content #courses .courseLabel { margin-top: 20px; margin-bottom: -1px; }
 body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 950px; text-align: center; margin-top: 20px; margin-bottom: 20px; }
 * html body.two-col #footer { overflow-x: hidden; }
 
@@ -449,6 +452,6 @@ body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 
 
 .elevationProfile { width: 100%; height: auto; }
 
-#capcrit { padding: 10px; float: left; }
+.courseMap { width: auto; height: 300px; }
 
 .sponsor .sponsorLogo { max-width: 150px; }

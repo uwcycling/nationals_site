@@ -23,8 +23,6 @@
 
 //Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col
-  //background-color: #fcfcfc
-
   #container
     +container
 
@@ -32,16 +30,14 @@ body.two-col
     +column(!blueprint_grid_columns)
     text-align: center
 
-  #divider
-    margin: auto
-    width: 700px
-    border-bottom: black 1px solid
-
   #header
-    margin-top: 20px
+    margin:
+      :top 20px
+      :bottom 20px
 
     #logoWrapper
-      +column(!blueprint_grid_columns / 2)
+      text-align: right
+      +column(!blueprint_grid_columns / 2 - 1)
       #logo
         width: 350px
 
@@ -50,7 +46,10 @@ body.two-col
       margin-top: 60px
       text-align: left
       font-size: 150%
-      +column(!blueprint_grid_columns / 2, true)
+      +column(!blueprint_grid_columns / 2 - 2, true)
+
+      #eventsTitle
+        margin-left: -40px
 
   #sidebar
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
@@ -60,15 +59,22 @@ body.two-col
   #content
     // Two thirds of the grid columns, rounding up.
     // With 24 cols, this is 16.
-    !content_columns = 20
+    !content_columns = 24
     // true means it's the last column in the row
-    //+column(!content_columns, true)
+    +column(!content_columns, true)
 
     #sponsors
+      text-align: center
       +column(!blueprint_grid_columns / 2)
 
     #courses
+      text-align: center
       +column(!blueprint_grid_columns / 2, true)
+
+      .courseLabel
+        margin:
+          :top 20px
+          :bottom -1px
 
   #footer
     +column(!blueprint_grid_columns)
@@ -80,35 +86,14 @@ body.two-col
 .sectionTitle
   +sectionTitleFont
 
-
-/////// Image stying ////////
 .elevationProfile
   width: 100%
   height: auto
 
-//.companyLogo
-  +embeddedImage
-
-#capcrit
-  +embeddedImage
-  float: left
+.courseMap
+  width: auto
+  height: 300px
 
 .sponsor
-  //width: 500px
   .sponsorLogo
     max-width: 150px
-    //float: left
-  //.sponsorCaption
-    float: right
-
-//#borahLogo
-  float: left
-
-//#uwLogo
-  float: right
-
-//#concourseLogo
-  float: left
-
-//.sponsorTitle
-  margin-top: 30px
