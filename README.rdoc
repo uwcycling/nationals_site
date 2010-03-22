@@ -1,0 +1,11 @@
+= The Nationals Page
+
+The purpose of the nationals page is to give the nationals event a page.
+
+== Instructions
+
+To get a preview of the nationals site, you can view file the <tt>http://localhost:4567</tt> file in your browser.
+
+Run <tt>compass --watch</tt> in the project root to update static css files.
+
+Run <tt>rake tar</tt> to create a deployable static site.

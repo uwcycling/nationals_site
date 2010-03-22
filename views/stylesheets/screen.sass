@@ -1,0 +1,114 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import blueprint/reset.sass
+// To configure blueprint, edit the partials/base.sass file.
+@import partials/base.sass
+@import partials/mixins.sass
+// Import all the default blueprint modules so that we can access their mixins.
+@import blueprint
+// Import the non-default scaffolding module.
+@import blueprint/modules/scaffolding.sass
+
+// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
++blueprint
+
+//Recommended Blueprint configuration with scoping and semantic layout:
+//+blueprint-typography("body.bp")
+//+blueprint-scaffolding("body.bp")
+//body.bp
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+
+//Page layout can be done using mixins applied to your semantic classes and IDs:
+body.two-col
+  //background-color: #fcfcfc
+
+  #container
+    +container
+
+  #header, #footer
+    +column(!blueprint_grid_columns)
+    text-align: center
+
+  #divider
+    margin: auto
+    width: 700px
+    border-bottom: black 1px solid
+
+  #header
+    margin-top: 20px
+
+    #logoWrapper
+      +column(!blueprint_grid_columns / 2)
+      #logo
+        width: 350px
+
+
+    #schedule
+      margin-top: 60px
+      text-align: left
+      font-size: 150%
+      +column(!blueprint_grid_columns / 2, true)
+
+  #sidebar
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    !sidebar_columns = 4
+    +column(!sidebar_columns)
+      
+  #content
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    !content_columns = 20
+    // true means it's the last column in the row
+    //+column(!content_columns, true)
+
+    #sponsors
+      +column(!blueprint_grid_columns / 2)
+
+    #courses
+      +column(!blueprint_grid_columns / 2, true)
+
+  #footer
+    +column(!blueprint_grid_columns)
+    text-align: center
+    margin:
+      top: 20px
+      bottom: 20px
+
+.sectionTitle
+  +sectionTitleFont
+
+
+/////// Image stying ////////
+.elevationProfile
+  width: 100%
+  height: auto
+
+//.companyLogo
+  +embeddedImage
+
+#capcrit
+  +embeddedImage
+  float: left
+
+.sponsor
+  //width: 500px
+  .sponsorLogo
+    max-width: 150px
+    //float: left
+  //.sponsorCaption
+    float: right
+
+//#borahLogo
+  float: left
+
+//#uwLogo
+  float: right
+
+//#concourseLogo
+  float: left
+
+//.sponsorTitle
+  margin-top: 30px
