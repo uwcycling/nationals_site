@@ -443,13 +443,15 @@ body.two-col #content { display: inline; float: left; margin-right: 0; width: 95
 * html body.two-col #content { overflow-x: hidden; }
 body.two-col #content #sponsors { text-align: center; display: inline; float: left; margin-right: 10px; width: 470px; }
 * html body.two-col #content #sponsors { overflow-x: hidden; }
+body.two-col #content #sponsors:hover { background-color: #ddd; }
 body.two-col #content #courses { text-align: center; display: inline; float: left; margin-right: 0; width: 470px; }
 * html body.two-col #content #courses { overflow-x: hidden; }
+body.two-col #content #courses:hover { background-color: #ddd; }
 body.two-col #content #courses .courseLabel { margin-bottom: -1px; }
-body.two-col #content .sectionTitle { font-size: 40px; }
+body.two-col #content .sectionTitle { font-size: 40px; color: black; }
 body.two-col #content .elevationProfile { width: 100%; height: auto; }
 body.two-col #content .courseMap { width: auto; height: 300px; }
-body.two-col #content .sponsor .sponsorLogo { max-width: 150px; }
+body.two-col #content .sponsor .sponsorLogo { max-width: 150px; margin: 10px; }
 body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 950px; text-align: center; margin-top: 20px; margin-bottom: 20px; }
 * html body.two-col #footer { overflow-x: hidden; }
 
@@ -458,3 +460,7 @@ body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 
 #sponsorsPageContent .sponsor .sponsorDescription { clear: both; }
 #sponsorsPageContent #soloLogos { margin-top: 30px; text-align: center; }
 #sponsorsPageContent #soloLogos .sponsorLogo { max-height: 100px; }
+
+#coursesPageContent .courseLabel { font-size: 40px; margin-top: 30px; }
+#coursesPageContent .course { text-align: center; }
+#coursesPageContent .course a { display: block; }

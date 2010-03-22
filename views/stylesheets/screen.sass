@@ -69,10 +69,14 @@ body.two-col
     #sponsors
       text-align: center
       +column(!blueprint_grid_columns / 2)
+      &:hover
+        background-color: #ddd
 
     #courses
       text-align: center
       +column(!blueprint_grid_columns / 2, true)
+      &:hover
+        background-color: #ddd
 
       .courseLabel
         margin:
@@ -80,6 +84,7 @@ body.two-col
 
     .sectionTitle
       +sectionTitleFont
+      color: black
 
     .elevationProfile
       width: 100%
@@ -92,6 +97,7 @@ body.two-col
     .sponsor
       .sponsorLogo
         max-width: 150px
+        margin: 10px
 
   #footer
     +column(!blueprint_grid_columns)
@@ -121,3 +127,20 @@ body.two-col
     text-align: center
     .sponsorLogo
       max-height: 100px
+
+#coursesPageContent
+  .courseLabel
+    font-size: 40px
+    margin-top: 30px
+  .course
+    text-align: center
+    a
+      display: block
+
+    //.elevationProfile
+      width: 700px
+      height: auto
+
+    //.courseMap
+      width: auto
+      height: 300px
