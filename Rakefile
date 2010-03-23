@@ -12,3 +12,8 @@ task :tar do
   sh "wget -m -P tmp http://localhost:3000"
   sh 'cd "tmp/localhost:3000"; tar -czvf ../../nationals_site.tar.gz *; cd -'
 end
+
+desc "Clear temp dir."
+task :clean do
+  sh "rm -rfv tmp/*"
+end
