@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'rake'
 
-SCRAPE_PORT = 4576
-
 desc "View the index page in google chrome."
 task :view do
   sh "google-chrome http://localhost:3000"
@@ -30,15 +28,15 @@ end
 
 desc "Deploy site to uwcycling.com/nationals"
 task :deploy => :scrape do
-  #sh 'cd "tmp/localhost:#{SCRAPE_PORT}"; scp -r * me:/tmp/www/nationals ;cd -'
   sh <<-HERE
-    cd "tmp/localhost:#{SCRAPE_PORT}"
+    cd tmp/site
     scp -r * uwc:~/www/nationals
     cd -
   HERE
 end
 
 task :scrape do
+  SCRAPE_PORT = 4576
   sh <<-HERE
     ruby app.rb -p#{SCRAPE_PORT} &
     sleep 2
