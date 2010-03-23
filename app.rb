@@ -18,7 +18,7 @@ end
 # can safely reside.
 get '/stylesheets/:name.css' do
   content_type 'text/css', :charset => 'utf-8'
-  sass(:"stylesheets/#{params[:name]}", Compass.sass_engine_options )
+  sass(:"stylesheets/#{params[:name]}", Compass.sass_engine_options)
 end
 
 get '/' do
