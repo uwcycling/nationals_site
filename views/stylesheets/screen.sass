@@ -32,15 +32,14 @@ body.two-col
     height: 100%
     background-image: url("/images/transparent-gray.png")
     background-repeat: repeat
-
+    display: none
 
     #popup
       border: 5px solid black
       background-color: white
-      width: 500px
-      height: 500px
+      width: 1000px
       margin:
-        :top 200px
+        :top 25px
         :left auto
         :right auto
 
@@ -48,6 +47,10 @@ body.two-col
         text-align: center
         background-color: black
         color: white
+
+      #popupContents
+        overflow: scroll
+        height: 700px
     
 
   !alertPadding = 5px
@@ -64,7 +67,6 @@ body.two-col
     padding:
       :top = !alertPadding
       :bottom = !alertPadding
-
     a
       &:hover
         color: #888   
@@ -121,7 +123,7 @@ body.two-col
       +column(!blueprint_grid_columns / 2)
       &:hover
         background-color: #ddd
-
+        cursor: pointer
       a
         text-decoration: none
 
@@ -130,13 +132,17 @@ body.two-col
       +column(!blueprint_grid_columns / 2, true)
       &:hover
         background-color: #ddd
-
       a
         text-decoration: none
-
       .courseLabel
         margin:
           :bottom -1px
+      .course
+        padding: 1px
+        &:hover
+          border: black 1px solid
+          padding: 0px
+          cursor: pointer
 
     .sectionTitle
       +sectionTitleFont

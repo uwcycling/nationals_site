@@ -47,14 +47,13 @@
         %img.sponsorLogo{ :src => "images/baird.gif" }
 
   #courses
-    %a{ :href => "courses.html" }
-      .sectionTitle Courses
-      .course
-        %h3.courseLabel Road Race
-        %img.courseMap{ :src => "images/rr_map.png" }
-      .course
-        %h3.courseLabel Criterium
-        %img.courseMap{ :src => "images/crit_map.png" }
-      .course
-        %h3.courseLabel Team Time Trial
-        %img.courseMap{ :src => "images/ttt_map.png" }
+    .sectionTitle Courses
+    #roadRacePopupLink.course
+      %h3.courseLabel Road Race
+      %img.courseMap{ :src => "images/rr_map.png" }
+    #critPopupLink.course
+      %h3.courseLabel Criterium
+      %img.courseMap{ :src => "images/crit_map.png" }
+    #timeTrialPopupLink.course
+      %h3.courseLabel Team Time Trial
+      %img.courseMap{ :src => "images/ttt_map.png" }

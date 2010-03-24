@@ -425,9 +425,10 @@ input.text, input.title { width: 300px; }
 
 textarea { width: 390px; height: 250px; }
 
-body.two-col #popupPane { z-index: 200; position: fixed; top: 0px; right: 0px; left: 0px; height: 100%; background-image: url("/images/transparent-gray.png"); background-repeat: repeat; }
-body.two-col #popupPane #popup { border: 5px solid black; background-color: white; width: 500px; height: 500px; margin-top: 200px; margin-left: auto; margin-right: auto; }
+body.two-col #popupPane { z-index: 200; position: fixed; top: 0px; right: 0px; left: 0px; height: 100%; background-image: url("/images/transparent-gray.png"); background-repeat: repeat; display: none; }
+body.two-col #popupPane #popup { border: 5px solid black; background-color: white; width: 1000px; margin-top: 25px; margin-left: auto; margin-right: auto; }
 body.two-col #popupPane #popup #popupTitle { text-align: center; background-color: black; color: white; }
+body.two-col #popupPane #popup #popupContents { overflow: scroll; height: 700px; }
 body.two-col #alerts { z-index: 100; position: fixed; top: 0px; color: #333; text-align: center; width: 100%; background-color: #ffff00; border-bottom: 3px solid #ff9900; font-size: 20px; padding-top: 5px; padding-bottom: 5px; }
 body.two-col #alerts a:hover { color: #888; }
 body.two-col #container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
@@ -449,13 +450,15 @@ body.two-col #content { display: inline; float: left; margin-right: 0; width: 95
 * html body.two-col #content { overflow-x: hidden; }
 body.two-col #content #sponsors { text-align: center; display: inline; float: left; margin-right: 10px; width: 470px; }
 * html body.two-col #content #sponsors { overflow-x: hidden; }
-body.two-col #content #sponsors:hover { background-color: #ddd; }
+body.two-col #content #sponsors:hover { background-color: #ddd; cursor: pointer; }
 body.two-col #content #sponsors a { text-decoration: none; }
 body.two-col #content #courses { text-align: center; display: inline; float: left; margin-right: 0; width: 470px; }
 * html body.two-col #content #courses { overflow-x: hidden; }
 body.two-col #content #courses:hover { background-color: #ddd; }
 body.two-col #content #courses a { text-decoration: none; }
 body.two-col #content #courses .courseLabel { margin-bottom: -1px; }
+body.two-col #content #courses .course { padding: 1px; }
+body.two-col #content #courses .course:hover { border: black 1px solid; padding: 0px; cursor: pointer; }
 body.two-col #content .sectionTitle { font-size: 40px; color: black; }
 body.two-col #content .elevationProfile { width: 100%; height: auto; }
 body.two-col #content .courseMap { width: auto; height: 300px; }
