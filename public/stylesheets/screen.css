@@ -425,10 +425,14 @@ input.text, input.title { width: 300px; }
 
 textarea { width: 390px; height: 250px; }
 
-body.two-col #container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; margin-top: 40px; }
-body.two-col #container { display: block; }
+body.two-col #popupPane { z-index: 200; position: fixed; top: 0px; right: 0px; left: 0px; height: 100%; background-image: url("/images/transparent-gray.png"); background-repeat: repeat; }
+body.two-col #popupPane #popup { border: 5px solid black; background-color: white; width: 500px; height: 500px; margin-top: 200px; margin-left: auto; margin-right: auto; }
+body.two-col #popupPane #popup #popupTitle { text-align: center; background-color: black; color: white; }
 body.two-col #alerts { z-index: 100; position: fixed; top: 0px; color: #333; text-align: center; width: 100%; background-color: #ffff00; border-bottom: 3px solid #ff9900; font-size: 20px; padding-top: 5px; padding-bottom: 5px; }
 body.two-col #alerts a:hover { color: #888; }
+body.two-col #container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
+body.two-col #container { display: block; }
+body.two-col .belowAlert { padding-top: 40px; }
 body.two-col #header, body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 950px; text-align: center; }
 * html body.two-col #header, * html body.two-col #footer { overflow-x: hidden; }
 body.two-col #header { margin-top: 20px; margin-bottom: 20px; }
@@ -462,7 +466,8 @@ body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 
 #sponsorsPageContent #longDescriptions { border-right: black 1px solid; padding-right: 23px; margin-top: 10px; float: left; width: 75%; }
 #sponsorsPageContent #longDescriptions .sponsor .sponsorLogo { max-width: 150px; float: left; margin-top: 30px; }
 #sponsorsPageContent #longDescriptions .sponsor .sponsorTitle { font-size: 30px; float: right; margin-top: 90px; margin-bottom: -40px; }
-#sponsorsPageContent #longDescriptions .sponsor .sponsorDescription { clear: both; }
+#sponsorsPageContent #longDescriptions .sponsor .sponsorDescription { clear: both; padding-top: 10px; }
+#sponsorsPageContent #longDescriptions .sponsor .sponsorDescription #bookingLink { text-align: center; display: block; }
 #sponsorsPageContent #soloLogos { float: right; margin-top: 30px; }
 #sponsorsPageContent #soloLogos .sponsorLogo { max-height: 100px; }
 #sponsorsPageContent #soloLogos a { display: block; }
