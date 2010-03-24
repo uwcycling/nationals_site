@@ -25,6 +25,27 @@
 body.two-col
   #container
     +container
+    margin-top: 40px
+
+  !alertPadding = 5px
+  #alerts
+    z-index: 100
+    position: fixed
+    top: 0px
+    color: #333
+    text-align: center
+    width: 100%
+    background-color: #ffff00
+    border-bottom: 3px solid #ff9900
+    font-size: 20px
+    padding:
+      :top = !alertPadding
+      :bottom = !alertPadding
+
+    a
+      &:hover
+        color: #888   
+        
 
   #header, #footer
     +column(!blueprint_grid_columns)

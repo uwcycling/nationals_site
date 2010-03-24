@@ -425,8 +425,10 @@ input.text, input.title { width: 300px; }
 
 textarea { width: 390px; height: 250px; }
 
-body.two-col #container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
+body.two-col #container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; margin-top: 40px; }
 body.two-col #container { display: block; }
+body.two-col #alerts { z-index: 100; position: fixed; top: 0px; color: #333; text-align: center; width: 100%; background-color: #ffff00; border-bottom: 3px solid #ff9900; font-size: 20px; padding-top: 5px; padding-bottom: 5px; }
+body.two-col #alerts a:hover { color: #888; }
 body.two-col #header, body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 950px; text-align: center; }
 * html body.two-col #header, * html body.two-col #footer { overflow-x: hidden; }
 body.two-col #header { margin-top: 20px; margin-bottom: 20px; }
