@@ -444,9 +444,11 @@ body.two-col #content { display: inline; float: left; margin-right: 0; width: 95
 body.two-col #content #sponsors { text-align: center; display: inline; float: left; margin-right: 10px; width: 470px; }
 * html body.two-col #content #sponsors { overflow-x: hidden; }
 body.two-col #content #sponsors:hover { background-color: #ddd; }
+body.two-col #content #sponsors a { text-decoration: none; }
 body.two-col #content #courses { text-align: center; display: inline; float: left; margin-right: 0; width: 470px; }
 * html body.two-col #content #courses { overflow-x: hidden; }
 body.two-col #content #courses:hover { background-color: #ddd; }
+body.two-col #content #courses a { text-decoration: none; }
 body.two-col #content #courses .courseLabel { margin-bottom: -1px; }
 body.two-col #content .sectionTitle { font-size: 40px; color: black; }
 body.two-col #content .elevationProfile { width: 100%; height: auto; }
@@ -455,11 +457,13 @@ body.two-col #content .sponsor .sponsorLogo { max-width: 150px; margin: 10px; }
 body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 950px; text-align: center; margin-top: 20px; margin-bottom: 20px; }
 * html body.two-col #footer { overflow-x: hidden; }
 
-#sponsorsPageContent .sponsor .sponsorLogo { max-width: 150px; float: left; margin-top: 30px; }
-#sponsorsPageContent .sponsor .sponsorTitle { font-size: 40px; float: right; margin-top: 90px; margin-bottom: -40px; }
-#sponsorsPageContent .sponsor .sponsorDescription { clear: both; }
-#sponsorsPageContent #soloLogos { margin-top: 30px; text-align: center; }
+#sponsorsPageContent #longDescriptions { border-right: black 1px solid; padding-right: 23px; margin-top: 10px; float: left; width: 75%; }
+#sponsorsPageContent #longDescriptions .sponsor .sponsorLogo { max-width: 150px; float: left; margin-top: 30px; }
+#sponsorsPageContent #longDescriptions .sponsor .sponsorTitle { font-size: 30px; float: right; margin-top: 90px; margin-bottom: -40px; }
+#sponsorsPageContent #longDescriptions .sponsor .sponsorDescription { clear: both; }
+#sponsorsPageContent #soloLogos { float: right; margin-top: 30px; }
 #sponsorsPageContent #soloLogos .sponsorLogo { max-height: 100px; }
+#sponsorsPageContent #soloLogos a { display: block; }
 
 #coursesPageContent .courseLabel { font-size: 40px; margin-top: 30px; }
 #coursesPageContent .course { text-align: center; }
