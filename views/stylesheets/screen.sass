@@ -43,8 +43,10 @@ body.two-col
       :bottom = !alertPadding
 
     a
+      text-decoration: none
       &:hover
         color: #888   
+        text-decoration: underline
         
 
   #header, #footer
@@ -65,9 +67,8 @@ body.two-col
       #logo
         width: 350px
 
-
     #schedule
-      margin-top: 60px
+      margin-top: 30px
       text-align: left
       font-size: 150%
       +column(!blueprint_grid_columns / 2 - 2, true)
@@ -146,15 +147,16 @@ body.two-col
       .sponsorLogo
         max-width: 150px
         float: left
-        margin-top: 30px
+        margin-top: 10px
 
       .sponsorTitle
-        font-size: 30px
+        font-size: 25px
         float: right
         margin-top: 90px
         margin-bottom: -40px
 
       .sponsorDescription
+        padding-top: 7px
         clear: both
 
   #soloLogos
