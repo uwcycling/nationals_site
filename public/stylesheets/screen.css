@@ -439,7 +439,7 @@ body.two-col #header #logoWrapper #logo { width: 350px; }
 body.two-col #header #schedule { margin-top: 60px; text-align: left; font-size: 150%; display: inline; float: left; margin-right: 0; width: 390px; }
 * html body.two-col #header #schedule { overflow-x: hidden; }
 body.two-col #header #schedule #eventsTitle { margin-left: -40px; }
-body.two-col #header #schedule dd.level2 { margin-left: 60px; font-size: 80%; }
+body.two-col #header #schedule .time { font-weight: bold; color: #445490; }
 body.two-col #sidebar { display: inline; float: left; margin-right: 10px; width: 150px; }
 * html body.two-col #sidebar { overflow-x: hidden; }
 body.two-col #content { display: inline; float: left; margin-right: 0; width: 950px; }
