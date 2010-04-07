@@ -56,10 +56,26 @@ body.two-col
   #header
     margin:
       :top 20px
-      :bottom 20px
+      :bottom -25px
 
     .sectionTitle
       +sectionTitleFont
+
+    #signup
+      margin:
+        :top -22px
+        :bottom -20px
+      a
+        padding:
+          :left 5px
+          :right 5px
+          :bottom 2px
+        background-color: #ff9900
+        text-decoration: none
+        font-size: 25px
+        &:hover
+          color: #888   
+          text-decoration: underline
 
     #logoWrapper
       text-align: right
@@ -79,7 +95,6 @@ body.two-col
       .time
         font-weight: bold
         color: #445490
-
 
   #sidebar
     // One third of the grid columns, rounding down. With 24 cols, this is 8.

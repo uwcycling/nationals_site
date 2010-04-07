@@ -383,7 +383,7 @@ input.span-24, textarea.span-24, select.span-24 { width: 950px !important; }
 
 .append-bottom { margin-bottom: 1.5em; }
 
-.showgrid { background: url('../images/grid.png?1269988639'); }
+.showgrid { background: url('../images/grid.png?1266701752'); }
 
 .error { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 .error a { color: #8a1f11; }
@@ -432,8 +432,11 @@ body.two-col #alerts a { text-decoration: none; }
 body.two-col #alerts a:hover { color: #888; text-decoration: underline; }
 body.two-col #header, body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 950px; text-align: center; }
 * html body.two-col #header, * html body.two-col #footer { overflow-x: hidden; }
-body.two-col #header { margin-top: 20px; margin-bottom: 20px; }
+body.two-col #header { margin-top: 20px; margin-bottom: -25px; }
 body.two-col #header .sectionTitle { font-size: 40px; }
+body.two-col #header #signup { margin-top: -22px; margin-bottom: -20px; }
+body.two-col #header #signup a { padding-left: 5px; padding-right: 5px; padding-bottom: 2px; background-color: #ff9900; text-decoration: none; font-size: 25px; }
+body.two-col #header #signup a:hover { color: #888; text-decoration: underline; }
 body.two-col #header #logoWrapper { text-align: right; display: inline; float: left; margin-right: 10px; width: 430px; }
 * html body.two-col #header #logoWrapper { overflow-x: hidden; }
 body.two-col #header #logoWrapper #logo { width: 350px; }
