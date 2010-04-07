@@ -25,10 +25,6 @@ get '/' do
   haml :index
 end
 
-get '/sponsors.html' do
-  haml :sponsors
-end
-
-get '/courses.html' do
-  haml :courses
+get '/:page.html' do
+  haml params[:page].to_sym
 end

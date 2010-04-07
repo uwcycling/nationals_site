@@ -7,28 +7,48 @@
     %dl
       %dt
         Friday, May 7th: Road Race
-        %dd
-          Women's Division 2 - 8:30 am
-        %dd
-          Women's Division 1 - 8:40 am
-        %dd
-          Men's Division 2 - 12:00 pm
-        %dd
-          Men's Division 1 - 12:10 pm
+        %dd.level1
+          7am-12pm Packet pickup only
+          %dd.level2
+            (Blue Mound State Park)
+        %dd.level1
+          8:30am Men's Division 1
+          %dd.level2
+            == ~ 73 miles
+        %dd.level1
+          8:40am Men's Division 2
+          %dd.level2
+            == ~ 73 miles
+        %dd.level1
+          1:00pm Women's Division 1
+          %dd.level2
+            == ~ 59 miles
+        %dd.level1
+          1:10pm Women's Division 2
+          %dd.level2
+            == ~ 59 miles
+        %dd.level1
+          6-8pm Registration and packet pickup
+          %dd.level2
+            (Madison Concourse Hotel)
+        %dd.level1
+          8-9:30pm Open Collegiate Board Meeting
+          %dd.level2
+            (Madison Concourse Hotel)
       %dt
         Saturday, May 8th: Critierium
-        %dd
-          Women's Division 2 - 3:00 pm
-        %dd
-          Women's Division 1 - 4:00 pm
-        %dd
-          Men's Division 2 - 5:00 pm
-        %dd
-          Men's Division 1 - 6:30 pm
+        %dd.level1
+          3:00pm Women's Division 2
+        %dd.level1
+          4:00pm Women's Division 1
+        %dd.level1
+          5:00pm Men's Division 2
+        %dd.level1
+          6:30pm Men's Division 1
       %dt
         Sunday, May 9th: Team Time Trial
-        %dd
-          Start Time - 8:30 am
+        %dd.level1
+          8:30am Start Time
 
 #content
   #sponsors
@@ -50,12 +70,12 @@
   #courses
     %a{ :href => "courses.html" }
       .sectionTitle Courses
-      .course
+      %a.course{ :href => "roadrace.html" }
         %h3.courseLabel Road Race
         %img.courseMap{ :src => "images/rr_map.png" }
-      .course
+      %a.course{ :href => "crit.html" }
         %h3.courseLabel Criterium
         %img.courseMap{ :src => "images/crit_map.png" }
-      .course
+      %a.course{ :href => "teamtimetrial.html" }
         %h3.courseLabel Team Time Trial
         %img.courseMap{ :src => "images/ttt_map.png" }

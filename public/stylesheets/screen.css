@@ -439,6 +439,7 @@ body.two-col #header #logoWrapper #logo { width: 350px; }
 body.two-col #header #schedule { margin-top: 60px; text-align: left; font-size: 150%; display: inline; float: left; margin-right: 0; width: 390px; }
 * html body.two-col #header #schedule { overflow-x: hidden; }
 body.two-col #header #schedule #eventsTitle { margin-left: -40px; }
+body.two-col #header #schedule dd.level2 { margin-left: 60px; font-size: 80%; }
 body.two-col #sidebar { display: inline; float: left; margin-right: 10px; width: 150px; }
 * html body.two-col #sidebar { overflow-x: hidden; }
 body.two-col #content { display: inline; float: left; margin-right: 0; width: 950px; }
@@ -451,6 +452,8 @@ body.two-col #content #courses { text-align: center; display: inline; float: lef
 * html body.two-col #content #courses { overflow-x: hidden; }
 body.two-col #content #courses:hover { background-color: #ddd; }
 body.two-col #content #courses a { text-decoration: none; }
+body.two-col #content #courses img { padding: 2px; }
+body.two-col #content #courses img:hover { padding: 0px; border: black 2px solid; }
 body.two-col #content #courses .courseLabel { margin-bottom: -1px; }
 body.two-col #content .sectionTitle { font-size: 40px; color: black; }
 body.two-col #content .elevationProfile { width: 100%; height: auto; }
@@ -469,4 +472,4 @@ body.two-col #footer { display: inline; float: left; margin-right: 10px; width: 
 
 #coursesPageContent .courseLabel { font-size: 40px; margin-top: 30px; }
 #coursesPageContent .course { text-align: center; }
-#coursesPageContent .course a { display: block; }
+#coursesPageContent .course a { font-size: 15px; }
