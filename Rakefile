@@ -30,19 +30,20 @@ end
 
 desc "Deploy site to uwcycling.com/nationals"
 task :deploy => :scrape do
-  sh "rsync -avz tmp/localhost:#{SCRAPE_PORT}/* uwc:~/www/nationals"
+  sh "rsync -avz tmp/localhost:#{SCRAPE_PORT}/* uwcycle@uwcycling.com:~/www/nationals"
 end
 
 task :scrape do
+  pid = fork do 
+    sh "ruby app.rb -p#{SCRAPE_PORT}"
+  end
+  sleep 2
   sh <<-HERE
     rm -rfv "tmp/localhost:#{SCRAPE_PORT}"
-    ruby app.rb -p#{SCRAPE_PORT} &
-    sleep 2
-    pid=$!
     wget -m -P tmp http://localhost:#{SCRAPE_PORT}
-    kill $pid
   HERE
   puts
+  Process.kill "TERM", pid
 end
 
 desc "Clear temp dir."
